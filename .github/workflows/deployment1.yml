@@ -12,6 +12,7 @@ jobs:
       - name: Lint
         run: |
             npm run lint
+            echo "${{github.event}}"
       - name: Testing script
         run: |
             npm run test
